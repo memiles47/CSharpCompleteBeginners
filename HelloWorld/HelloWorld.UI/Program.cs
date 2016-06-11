@@ -8,7 +8,6 @@ namespace HelloWorld.UI
         {
             Console.WriteLine("Hello World");
             Console.ReadLine();
-
         }
     }
 }
