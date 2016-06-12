@@ -6,7 +6,7 @@ namespace HelloName
     {
         static void Main()
         {
-            Console.Write("Enter your name: ");
+            Console.Write("What is your name? ");
             var name = Console.ReadLine();
 
             Console.WriteLine($"\nHello, {name}");
