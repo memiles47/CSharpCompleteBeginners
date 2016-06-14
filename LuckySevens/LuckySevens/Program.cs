@@ -18,7 +18,7 @@ namespace LuckySevens
                     rollNumber++;
             }
 
-            Console.WriteLine($"Rolled seven {rollNumber} time(s)");
+            Console.WriteLine($"Out of 100 rolls, I rolled seven {rollNumber} time(s)");
             Console.ReadLine();
         }
     }
