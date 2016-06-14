@@ -12,15 +12,13 @@ namespace CoinToss2
             var guess = Console.ReadLine();
 
             var coinToss = coin.Next(0, 2);
+            var coinDescription = coinToss == 0 ? "Tails" : "Heads";
 
-            if (guess?.ToLower() == "h" && coinToss == 1)
-                Console.WriteLine("The coin toss was Heads, You win!");
-
-            else if (guess?.ToLower() == "t" && coinToss == 0)
-                Console.WriteLine("THe coin toss was Tales, You win!");
+            if ((guess?.ToLower() == "t" && coinToss == 0) || (guess?.ToLower() == "h" && coinToss == 1))
+                Console.WriteLine($"The coin toss was {coinDescription}, You win!");
 
             else
-                Console.WriteLine(coinToss == 0 ? "Coin toss was tales, you lose!" : "Coin toss was heads, you lose!");
+                Console.WriteLine($"Coin toss was {coinDescription}, you lose!");
 
             Console.ReadLine();
         }
