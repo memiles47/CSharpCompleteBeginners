@@ -17,7 +17,7 @@ namespace GuessingGame
                 int tempParse;
                 guess = int.TryParse(Console.ReadLine(), out tempParse)? tempParse : 0;
 
-                if (guess < 1 || guess > 100)
+                if (ValidGuess(guess))
                 {
                     Console.WriteLine("Your guess must be between 1 and 100");
                     continue;
@@ -32,6 +32,11 @@ namespace GuessingGame
 
             Console.WriteLine($"You guessed the answer of {guess} correctly in {numberOfGuesses} guesses.");
             Console.ReadLine();
+        }
+
+        static bool ValidGuess(int guess)
+        {
+            return guess < 0 || guess > 100;
         }
     }
 }
