@@ -16,6 +16,13 @@ namespace GuessingGame
                 Console.Write("Guess a number between 1 and 100: ");
                 int tempParse;
                 guess = int.TryParse(Console.ReadLine(), out tempParse)? tempParse : 0;
+
+                if (guess < 1 || guess > 100)
+                {
+                    Console.WriteLine("Your guess must be between 1 and 100");
+                    continue;
+                }
+
                 numberOfGuesses++;
 
                 if (guess != answer)
