@@ -13,7 +13,8 @@ namespace GuessingGame
             do
             {
                 Console.Write("Guess a number between 1 and 100: ");
-                guess = int.Parse(Console.ReadLine());
+                int tempParse;
+                guess = int.TryParse(Console.ReadLine(), out tempParse)? tempParse : 0;
 
                 if (guess != answer)
                     Console.WriteLine($"Your guess is {(guess < answer ? "Low" : "High")}"); 
