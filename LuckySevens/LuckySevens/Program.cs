@@ -7,12 +7,12 @@ namespace LuckySevens
         static void Main()
         {
             var dieRoll = new Random();
-            int die1, die2, rollNumber = 0;
+            var rollNumber = 0;
 
-            for (int i = 1; i < 101; i++)
+            for (var i = 1; i < 101; i++)
             {
-                die1 = dieRoll.Next(1, 7);
-                die2 = dieRoll.Next(1, 7);
+                var die1 = dieRoll.Next(1, 7);
+                var die2 = dieRoll.Next(1, 7);
 
                 if (die1 + die2 == 7)
                     rollNumber++;
