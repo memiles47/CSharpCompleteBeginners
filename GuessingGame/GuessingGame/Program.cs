@@ -2,9 +2,9 @@
 
 namespace GuessingGame
 {
-    class Program
+    internal class Program
     {
-        static void Main()
+        public void Main()
         {
             int guess;
             var randomNumber = new Random();
@@ -34,7 +34,7 @@ namespace GuessingGame
             Console.ReadLine();
         }
 
-        static bool ValidGuess(int guess)
+        public bool ValidGuess(int guess)
         {
             return guess < 0 || guess > 100;
         }
