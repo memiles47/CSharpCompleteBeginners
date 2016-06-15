@@ -4,7 +4,7 @@ namespace GuessingGame
 {
     internal class Program
     {
-        public void Main()
+        static void Main()
         {
             int guess;
             var randomNumber = new Random();
@@ -17,7 +17,7 @@ namespace GuessingGame
                 int tempParse;
                 guess = int.TryParse(Console.ReadLine(), out tempParse)? tempParse : 0;
 
-                if (ValidGuess(guess))
+                if (!ValidGuess(guess))
                 {
                     Console.WriteLine("Your guess must be between 1 and 100");
                     continue;
@@ -34,9 +34,9 @@ namespace GuessingGame
             Console.ReadLine();
         }
 
-        public bool ValidGuess(int guess)
+        static bool ValidGuess(int guess)
         {
-            return guess < 0 || guess > 100;
+            return guess > 0 && guess < 101;
         }
     }
 }

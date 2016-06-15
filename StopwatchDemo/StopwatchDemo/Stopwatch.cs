@@ -1,0 +1,7 @@
+﻿namespace StopwatchDemo
+{
+    class Stopwatch
+    {
+        
+    }
+}
