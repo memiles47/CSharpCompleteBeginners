@@ -2,7 +2,7 @@
 
 namespace StopwatchDemo
 {
-    class Stopwatch
+    internal class Stopwatch
     {
         private DateTime _startTime;
 

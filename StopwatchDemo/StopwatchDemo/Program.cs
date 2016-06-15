@@ -2,9 +2,9 @@
 
 namespace StopwatchDemo
 {
-    class Program
+    internal class Program
     {
-        static void Main()
+        private static void Main()
         {
             var timer = new Stopwatch();
 
