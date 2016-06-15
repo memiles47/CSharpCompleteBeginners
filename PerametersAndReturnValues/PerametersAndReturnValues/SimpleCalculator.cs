@@ -1,0 +1,7 @@
+﻿namespace PerametersAndReturnValues
+{
+    class SimpleCalculator
+    {
+        
+    }
+}
