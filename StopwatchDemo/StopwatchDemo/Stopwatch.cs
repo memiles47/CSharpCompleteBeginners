@@ -4,16 +4,16 @@ namespace StopwatchDemo
 {
     class Stopwatch
     {
-        private DateTime StartTime { get; set; }
+        private DateTime _startTime;
 
         public void Start()
         {
-            StartTime = DateTime.Now;
+            _startTime = DateTime.Now;
         }
 
         public void Stop()
         {
-            var time = DateTime.Now - StartTime;
+            var time = DateTime.Now - _startTime;
             Console.WriteLine($"Elapsed Time: {time.Seconds} seconds, {time.Milliseconds} millisecoonds");
         }
     }
