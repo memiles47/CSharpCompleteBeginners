@@ -1,6 +1,6 @@
 ﻿namespace PerametersAndReturnValues
 {
-    class SimpleCalculator
+    internal class SimpleCalculator
     {
         public int Square(int x)
         {
