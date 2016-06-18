@@ -6,6 +6,8 @@ namespace RockPaperScissors
     {
         static void Main()
         {
+            Console.Write("Enter \"Rock\", \"Paper\" or \"Scissors\": ");
+            var guess = Console.ReadLine().ToLower();
 
             Console.ReadLine();
         }

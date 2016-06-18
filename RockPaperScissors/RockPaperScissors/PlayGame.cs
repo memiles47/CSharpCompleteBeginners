@@ -1,0 +1,7 @@
+namespace RockPaperScissors
+{
+    class PlayGame
+    {
+
+    }
+}
