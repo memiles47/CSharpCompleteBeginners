@@ -4,10 +4,11 @@ namespace RockPaperScissors2
 {
     class Program
     {
-        static void Main()
+        private static void Main()
         {
-
-            Console.ReadLine();
+            var game = new Game();
+            game.PlayGame();
+            game.DisplayScore();
         }
     }
 }
