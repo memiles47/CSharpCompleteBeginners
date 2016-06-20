@@ -4,9 +4,9 @@ namespace RockPaperScissors2
 {
     internal class Game
     {
-        private int _wins = 0;
-        private int _losses = 0;
-        private int _ties = 0;
+        private int _wins;
+        private int _losses;
+        private int _ties;
         private readonly Random _rng = new Random();
 
         public void PlayGame()

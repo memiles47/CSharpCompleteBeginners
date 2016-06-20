@@ -1,8 +1,6 @@
-﻿using System;
-
-namespace RockPaperScissors2
+﻿namespace RockPaperScissors2
 {
-    class Program
+    internal class Program
     {
         private static void Main()
         {
