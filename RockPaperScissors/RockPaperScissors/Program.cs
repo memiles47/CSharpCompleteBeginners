@@ -9,6 +9,8 @@ namespace RockPaperScissors
             var game = new PlayGame();
             var userGuess = string.Empty;
             var rps = new Random();
+            var userScore = 0;
+            var computerscore = 0;
 
             while (userGuess != "quit")
             {
