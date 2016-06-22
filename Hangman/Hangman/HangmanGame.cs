@@ -24,5 +24,25 @@
 
             DisplayResult();
         }
+
+        private void DisplayResult()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        private void PrompUser()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        private void DisplayPuzzle()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        private void SetUp()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }
