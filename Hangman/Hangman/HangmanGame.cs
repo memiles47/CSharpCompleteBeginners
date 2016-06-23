@@ -25,12 +25,7 @@
             DisplayResult();
         }
 
-        private void DisplayResult()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        private void PrompUser()
+        private void SetUp()
         {
             throw new System.NotImplementedException();
         }
@@ -40,7 +35,12 @@
             throw new System.NotImplementedException();
         }
 
-        private void SetUp()
+        private void PrompUser()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        private void DisplayResult()
         {
             throw new System.NotImplementedException();
         }
