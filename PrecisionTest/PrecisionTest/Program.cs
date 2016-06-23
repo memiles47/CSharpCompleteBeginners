@@ -2,16 +2,16 @@
 
 namespace PrecisionTest
 {
-    class Program
+    internal class Program
     {
-        static void Main()
+        private static void Main()
         {
             var seedF = 0.1f;
             var seedD = 0.1m;
             var valueF = 0f;
             var valueD = 0m;
 
-            for (int i = 0; i < 10; i++)
+            for (var i = 0; i < 10; i++)
             {
                 valueF += seedF;
                 valueD += seedD;
