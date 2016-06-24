@@ -6,8 +6,8 @@ namespace PrecisionTest
     {
         private static void Main()
         {
-            var seedF = 0.1f;
-            var seedD = 0.1m;
+            const float seedF = 0.1f;
+            const decimal seedD = 0.1m;
             var valueF = 0f;
             var valueD = 0m;
 
