@@ -1,4 +1,4 @@
-﻿namespace SimpleDelegate
+﻿namespace SimpleDelegateExample
 {
     class Program
     {
