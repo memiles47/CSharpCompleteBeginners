@@ -20,9 +20,12 @@ namespace SimpleDelegateExample
         {
            Func<int, int, int> myDelegate = Add;
 
-            Console.WriteLine(myDelegate(271, 152));
+            Console.WriteLine($"{myDelegate(271, 152)}\n");
 
             CallDelegate(myDelegate);
+
+            Func<string, int, int, string> ShowMe = (a, b, c) => string.Format(a, b, c, (b + c));
+            Console.WriteLine(ShowMe("{0} + {1} = {2}", 3, 5));
 
             Console.ReadLine();
 
