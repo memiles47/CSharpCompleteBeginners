@@ -2,7 +2,7 @@
 
 namespace SimpleDelegateExample
 {
-    class Program
+    internal class Program
     {
         //public delegate int MyDelegate(int a, int b);
 
@@ -16,7 +16,7 @@ namespace SimpleDelegateExample
             Console.WriteLine($"{myDelegate(272, 153)}\n");
         }
 
-        static void Main()
+        private static void Main()
         {
            Func<int, int, int> myDelegate = Add;
 
